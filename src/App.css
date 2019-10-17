@@ -1,22 +1,115 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.logo-container{
+  display: block;
+  position: relative;
+  top: 5vh;
+  /* min-width: 100vw; */
+  height: 20vmin;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.App-logo {
+  height: 20vmin;
+  /* position: absolute;
+  top: 5vh;  */
+}
+
+.App-header {
+  display: block;
+  /* min-width: 100vw; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(16px + 2vmin);
+  color: #051070;
+  position: relative;
+  top: 3vh;
+}
+
+.new-todo-section{
+  display: flex;
+  
+}
+
+.new-todo-section p{
+position: relative;
+top:4px;
+
+}
+
+.input-text{
+  border-radius: 5px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.24), 0 1px 6px rgba(0,0,0,0.45) inset;
+  border: none;
+  width: 50vw;
+  height: 26px;
+  margin-top: 1rem;
+  margin-left: 1vw;
+  text-indent: 10px;
+}
+
+.add-button{
+  margin-left: 1vw;
+  margin-top: 1rem;
+  height: 2.6em;
+  background-color: rgb(14, 196, 14);
+
+}
+
+
+
+
+.todo-container{
+  display: flex;
+  
+  border: solid rgb(228, 8, 100) 0.15em;
+  min-width: 60vw;
+  min-height: 30vh;
+  margin: 5vmin;
+  font-size: calc(12px + 2vmin);
+
+}
+
+.todo-container p{
+margin-block-start: 0.2em;
+margin-block-end: 1em;
+}
+
+
+#check{
+  position: relative;
+  top: 0.3vmin;
+  zoom: 120%;
+}
+ul{
+  margin: 1.8rem;
+  position: relative;
+  font-size: 2.2vmin;
+  right: 2rem;
+}
+
+li{
+  margin: 1vmin;
+  display: flex;
+  flex-direction: row;
+}
+
+.hr {
+  /* border: 10px;
+  height: 15px; */
+  width: 80%;
+  color: aqua;
+
+}
+
+.finished-section{
+  display: flex;
+  flex-direction: column;
 }
